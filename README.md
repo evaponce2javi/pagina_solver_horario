@@ -1,4 +1,4 @@
-# Solver de Horario Universitario — Frontend (React + Vite + TypeScript)
+# Solver de Horario Universitario
 
 Modela el armado de horario como un **problema de satisfacción de restricciones (CSP)**, lo resuelve por **fuerza bruta completa** (backtracking con poda por restricción dura) y ordena las soluciones según dos criterios de optimización independientes.
 
