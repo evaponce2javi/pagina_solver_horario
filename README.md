@@ -1,59 +1,15 @@
 # Solver de Horario Universitario — Frontend (React + Vite + TypeScript)
 
-Puerto fiel a la web del programa de consola en C++17. Modela el armado de
-horario como un **problema de satisfacción de restricciones (CSP)**, lo resuelve
-por **fuerza bruta completa** (backtracking con poda por restricción dura) y
-ordena las soluciones según dos criterios de optimización independientes.
-
-> **Sin persistencia, por diseño**: no usa `localStorage` ni backend. Al
-> refrescar la página se reinicia todo.
+Modela el armado de horario como un **problema de satisfacción de restricciones (CSP)**, lo resuelve por **fuerza bruta completa** (backtracking con poda por restricción dura) y ordena las soluciones según dos criterios de optimización independientes.
 
 ## Ejecutar
 
 ```bash
 npm i
-npm run dev      # http://localhost:5173
+npm run dev     
 ```
 
-Otros scripts: `npm run build`, `npm run preview`, `npm run typecheck`.
-
-## Modelo
-
-- **Variables**: las asignaturas. **Dominio**: sus paralelos.
-- **Asignación**: exactamente un paralelo por asignatura.
-- **Restricción dura**: dos paralelos elegidos no pueden compartir ninguna celda
-  `(día, clave)`. Se comprueba con un AND de máscaras `bigint` (cada sesión
-  presencial prende el bit `dia * 7 + clave`; 35 celdas en total). Detectar
-  choque es `(a & b) !== 0n`, O(1).
-- La única poda es la restricción dura: se guardan **todas** las combinaciones
-  válidas. La optimización solo **ordena**, nunca filtra.
-- **Todo o nada**: si no existe una asignación completa, no hay solución. No se
-  arman horarios parciales.
-- `ONLINE` no ocupa celda y jamás choca. Un paralelo puede tener **varias**
-  sesiones ONLINE (la unicidad `(día, clave)` solo rige para las presenciales).
-- Las asignaturas **sin paralelos** se excluyen de la búsqueda, con aviso.
-
-### Criterios de optimización (ambos se minimizan)
-
-1. **Ventanas** — por día, la corrida vacía más larga que tiene clase antes y
-   después; se suma esa ventana máxima de los 5 días.
-2. **Horario** — **promedio** de los índices de clave (0 = `1-2` … 6 = `13-14`)
-   de las sesiones presenciales. Menor promedio = clases más de mañana. Se usa
-   el promedio y no la suma porque la suma premiaba a los paralelos con *menos*
-   sesiones en vez de a los que tienen clases *más temprano*. La comparación es
-   **exacta con enteros** (multiplicación cruzada `sumaA·nB` vs `sumaB·nA`), sin
-   flotantes ni epsilons.
-
-### Desempates y trade-off
-
-- **Orden total determinista**: cada criterio desempata por el *otro* criterio y,
-  si aún hay empate, por la **firma canónica** (`ICI4150-2|ICI4247-1`). El
-  "mejor" no depende del orden en que el backtracking enumeró.
-- **Frente de Pareto**: se listan las soluciones **no dominadas** — aquellas en
-  las que no se puede mejorar un criterio sin empeorar el otro. Se calcula por
-  barrido (skyline) en O(n log n). Deliberadamente **no** se combinan los
-  criterios en un score ponderado: eso obligaría a inventar un "tipo de cambio"
-  arbitrario entre horas muertas y clases temprano.
+---
 
 ## Estructura
 
