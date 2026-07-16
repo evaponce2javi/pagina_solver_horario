@@ -4,6 +4,8 @@ Modela el armado de horario como un **problema de satisfacción de restricciones
 
 ## Ejecutar
 
+Recuerda tener instalado Node.js
+
 ```bash
 npm i
 npm run dev     
