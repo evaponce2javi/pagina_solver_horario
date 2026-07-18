@@ -24,6 +24,9 @@ Acá ponen sus asignaturas:
 Y al hacer clic en resolver les salen las opciones disponibles:
 <img width="430" height="37" alt="image" src="https://github.com/user-attachments/assets/f1ddf5cf-0c2e-4ed6-8852-5cd0414e0a60" />
 
+Y también salen dos opciones recomendadas: <img width="300" height="292" alt="image" src="https://github.com/user-attachments/assets/393cc0f9-9283-4e5d-a370-1c51ee603ee1" />
+
+Y abajo el resto de opciones válidas.
 
 ---
 
