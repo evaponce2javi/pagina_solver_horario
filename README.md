@@ -4,6 +4,8 @@ Modela el armado de horario como un **problema de satisfacción de restricciones
 
 ## Ejecutar
 
+Primero descargar el repo, hacerle fork o abrirlo con github desktop :D
+
 Recuerda tener instalado Node.js
 
 En la terminal, escribir:
