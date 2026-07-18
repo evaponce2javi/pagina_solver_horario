@@ -16,6 +16,16 @@ npm run dev
 ```
 
 ---
+## Ejemplo de uso
+
+Acá ponen sus asignaturas:
+<img width="302" height="428" alt="image" src="https://github.com/user-attachments/assets/c8595d1c-2e36-4eb3-aee8-e92987e45ba4" />
+
+Y al hacer clic en resolver les salen las opciones disponibles:
+<img width="430" height="37" alt="image" src="https://github.com/user-attachments/assets/f1ddf5cf-0c2e-4ed6-8852-5cd0414e0a60" />
+
+
+---
 
 ## Estructura
 
