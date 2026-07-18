@@ -68,3 +68,5 @@ src/
   imposible por construcción.
 - **Validación**: sigla `^[A-Z]{3}[0-9]{4}$`; número de paralelo entero ≥ 1 (no
   se aceptan negativos ni signo explícito).
+
+No olviden darle una estrellita :-)
