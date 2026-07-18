@@ -16,17 +16,20 @@ npm run dev
 ```
 
 ---
-## Ejemplo de uso
+## Ejemplo
 
 Acá ponen sus asignaturas:
-<img width="302" height="428" alt="image" src="https://github.com/user-attachments/assets/c8595d1c-2e36-4eb3-aee8-e92987e45ba4" />
+<img width="297" height="377" alt="image" src="https://github.com/user-attachments/assets/2439b9be-62ba-4506-a54f-4b1a2ba7a6c5" />
 
-Y al hacer clic en resolver les salen las opciones disponibles:
-<img width="430" height="37" alt="image" src="https://github.com/user-attachments/assets/f1ddf5cf-0c2e-4ed6-8852-5cd0414e0a60" />
+Pueden añadir paralelos y sesiones: <img width="287" height="327" alt="image" src="https://github.com/user-attachments/assets/efe3d19a-4349-4af9-9c19-f586a38b0e4d" />
 
-Y también salen dos opciones recomendadas: <img width="300" height="292" alt="image" src="https://github.com/user-attachments/assets/393cc0f9-9283-4e5d-a370-1c51ee603ee1" />
+En la vista previa irá saliendo a tiempo real cómo se va creando el horario de todos los paralelos: <img width="1603" height="436" alt="image" src="https://github.com/user-attachments/assets/e5f4a47f-54ea-4821-8428-1d8745fc3927" />
 
-Y abajo el resto de opciones válidas.
+Y al hacer clic en "Resolver", se obtienen los resultados sin choque: <img width="352" height="55" alt="image" src="https://github.com/user-attachments/assets/c9c500d5-d460-4420-afb5-9027d72b2623" />
+
+Ejemplo de solución:
+
+<img width="1917" height="860" alt="image" src="https://github.com/user-attachments/assets/5da6db10-d425-4251-b5da-311978deb6e6" />
 
 ---
 
